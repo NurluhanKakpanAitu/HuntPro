@@ -22,6 +22,9 @@ var connectionString = builder.Configuration.GetConnectionString(AppSettingsDefa
 // Add Health Checks
 builder.Services.AddHealthChecks();
 
+// Add Persistence
+builder.Services.AddPersistence(builder.Configuration);
+
 // Add DB context with Npgsql
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseNpgsql(connectionString));
 
