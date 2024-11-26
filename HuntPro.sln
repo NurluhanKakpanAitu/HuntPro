@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{5588C03D-AC78-46D6-88FD-7D4825A690F6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{85C5A857-9D4B-4A0A-BE58-B3DDF3B2864A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{0D2F0080-26DC-44F0-B44C-92D651F5877E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Authorization", "Authorization", "{E8305C0A-8752-41C3-99FB-4EF4B55235D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthServer", "AuthServer\AuthServer.csproj", "{F00AF23A-9A12-4451-91EB-319CEF46BB1F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HuntProAPI", "HuntProAPI", "{A7241D9E-10CA-4C19-9EDA-73697549AA8A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{656790AD-2DB8-4228-B030-E7A22556B23E}"
+	ProjectSection(SolutionItems) = preProject
+		compose.yaml = compose.yaml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F00AF23A-9A12-4451-91EB-319CEF46BB1F} = {E8305C0A-8752-41C3-99FB-4EF4B55235D0}
+		{85C5A857-9D4B-4A0A-BE58-B3DDF3B2864A} = {A7241D9E-10CA-4C19-9EDA-73697549AA8A}
+		{5588C03D-AC78-46D6-88FD-7D4825A690F6} = {A7241D9E-10CA-4C19-9EDA-73697549AA8A}
+		{0D2F0080-26DC-44F0-B44C-92D651F5877E} = {A7241D9E-10CA-4C19-9EDA-73697549AA8A}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F00AF23A-9A12-4451-91EB-319CEF46BB1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F00AF23A-9A12-4451-91EB-319CEF46BB1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F00AF23A-9A12-4451-91EB-319CEF46BB1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F00AF23A-9A12-4451-91EB-319CEF46BB1F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

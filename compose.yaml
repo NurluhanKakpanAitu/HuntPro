@@ -1,0 +1,18 @@
+﻿version: '3.9'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: hunt_pro
+    restart: always
+    ports:
+      - "5432:5432" 
+    environment:
+      POSTGRES_USER: "hunt_pro_user" 
+      POSTGRES_PASSWORD: "x2UGXT1cQEI3j4gNoP9IRhZwAgvSXT"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data 
+
+volumes:
+  postgres_data:
+    driver: local
