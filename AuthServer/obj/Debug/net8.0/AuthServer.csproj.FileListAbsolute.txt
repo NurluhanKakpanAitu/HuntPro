@@ -123,3 +123,4 @@
 /Users/nurlykhankakpan/RiderProjects/HuntPro/AuthServer/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /Users/nurlykhankakpan/RiderProjects/HuntPro/AuthServer/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
 /Users/nurlykhankakpan/RiderProjects/HuntPro/AuthServer/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/nurlykhankakpan/RiderProjects/HuntPro/AuthServer/obj/Debug/net8.0/AuthServer.sourcelink.json
