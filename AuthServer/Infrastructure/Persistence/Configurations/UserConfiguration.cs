@@ -13,8 +13,6 @@ public sealed class UserConfiguration : IEntityTypeConfiguration<User>
             .IsUnique();
 
         builder
-            .Ignore(c => c.UserName) 
-            .Ignore(c => c.NormalizedEmail)
             .Ignore(c => c.SecurityStamp)
             .Ignore(c => c.ConcurrencyStamp)
             .Ignore(c => c.PhoneNumberConfirmed)

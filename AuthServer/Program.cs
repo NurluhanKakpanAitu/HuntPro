@@ -4,6 +4,7 @@ using AuthServer.Configurations;
 using AuthServer.Constants;
 using AuthServer.Core.Domain.Entities;
 using AuthServer.Infrastructure.Persistence;
+using AuthServer.Infrastructure.Persistence.Context;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;

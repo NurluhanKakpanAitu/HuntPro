@@ -2,7 +2,7 @@ using AuthServer.Core.Domain.Entities;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace AuthServer.Infrastructure.Persistence;
+namespace AuthServer.Infrastructure.Persistence.Context;
 
 public sealed class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
     : IdentityDbContext<User>(options)
