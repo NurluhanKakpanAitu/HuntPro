@@ -28,8 +28,9 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="API\" />
-      <Folder Include="Core\Application\" />
+      <Folder Include="Core\Application\Claim\" />
+      <Folder Include="Core\Application\Role\" />
+      <Folder Include="Core\Application\User\" />
     </ItemGroup>
 
 </Project>
