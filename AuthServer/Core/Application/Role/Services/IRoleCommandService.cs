@@ -28,4 +28,11 @@ public interface IRoleCommandService
     /// <param name="roleId">Идентификатор роли</param>
     /// <returns>Задача</returns>
     Task DeleteRoleAsync(string roleId);
+    
+    /// <summary>
+    /// Обновление прав доступа роли
+    /// </summary>
+    /// <param name="updateRoleClaimsDto"></param>
+    /// <returns></returns>
+    Task<string> UpdateRoleClaimsAsync(UpdateRoleClaimsDto updateRoleClaimsDto);
 }

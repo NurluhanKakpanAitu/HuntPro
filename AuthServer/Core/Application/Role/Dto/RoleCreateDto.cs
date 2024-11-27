@@ -1,4 +1,4 @@
-namespace AuthServer.Core.Application.Claim.Dto;
+namespace AuthServer.Core.Application.Role.Dto;
 
 /// <summary>
 /// Дто для создания роли
