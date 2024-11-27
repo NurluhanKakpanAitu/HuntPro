@@ -49,4 +49,28 @@ public sealed class RoleCommandService(
         if (!result.Succeeded)
             throw new ValidationException(result.Errors.First().Code, result.Errors.First().Description);
     }
+
+    public async Task<string> UpdateRoleClaimsAsync(UpdateRoleClaimsDto updateRoleClaimsDto)
+    {
+        var role = await roleManager.FindByIdAsync(updateRoleClaimsDto.RoleId);
+        if (role == null)
+            throw new ValidationException(RoleErrors.NotFound);
+        
+        var roleClaims = await roleManager.GetClaimsAsync(role);
+        
+        var claimsToRemove = roleClaims.Where(claim =>
+            !updateRoleClaimsDto.Claims.Any(c => c.Type == claim.Type && c.Value == claim.Value)).ToList();
+        
+        var claimsToAdd = updateRoleClaimsDto.Claims.Where(claim => !roleClaims.Any(rc => rc.Type == claim.Type && rc.Value == claim.Value)).ToList();
+        
+        foreach (var claim in claimsToRemove)
+            await roleManager.RemoveClaimAsync(role, claim);
+
+        foreach (var newClaim in claimsToAdd.Select(claim => new System.Security.Claims.Claim(claim.Type, claim.Value)))
+        {
+            await roleManager.AddClaimAsync(role, newClaim);
+        }
+        
+        return role.Id;
+    }
 }
